@@ -1,9 +1,21 @@
 body {  background-image:url("sunset\ florencec.jpeg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  position:relative;
+  background-position: center;
   }
 
  img {
     max-width: 100%;
  }
+
+.krakau img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 50%
+}
 
 
 
@@ -40,7 +52,11 @@ body {  background-image:url("sunset\ florencec.jpeg");
     display: inline;
     
  }
-  
+
+main ul{
+  position: center;
+}
+
 footer {
     text-align: center;
 }
