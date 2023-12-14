@@ -48,14 +48,16 @@ li a:hover {
   background-color:dimgray;
 }
 
-
+/*haalt stipjes in nav balk weg*/
 nav ul li {
   display:inline; 
 }
 
-
-footer {
+/*footer*/
+.footer {
   text-align: center;
+  background-color: darksalmon;
+  padding: 1px;
 }
 
 
@@ -109,8 +111,27 @@ transition: all 2s ease;
   padding: 5px;
 }
 
-.footer {
-  background-color: darksalmon;
-  padding: 10px;
+.photos {
   text-align: center;
+  margin: 20px;
+}
+
+.photos {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.photos img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.photos img:hover {
+  transform: scale(1.1);
+  border-color: #555;
 }
