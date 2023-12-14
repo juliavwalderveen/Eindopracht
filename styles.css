@@ -4,64 +4,113 @@ body {  background-image:url("sunset\ florencec.jpeg");
   position:relative;
   background-position: center;
   }
-
+  
+/*alle foto's*/
  img {
     max-width: 100%;
  }
 
+ /* foto index.html*/
 .krakau img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 50%;
-  width: 50%
+  width: 50%;
+}
+
+/*menubalk styling*/
+nav ul {
+  padding: 0;
+  overflow: hidden;
+  background-color:darksalmon;
+}
+
+/*menubalk horizontaal*/
+nav li {
+  float: left;
+}
+
+/*menubalk blokken, a zodat tekst wit & geen link is*/
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*hover*/
+li a:hover {
+  background-color:darkgrey;
+}
+
+/*zorgt dat actieve pagina grijs wordt*/
+.active {
+  background-color:dimgray;
 }
 
 
-
- 
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:darksalmon;
-  }
-  
-  nav li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color:darkgrey;
-  }
-  
-  .active {
-    background-color:dimgray;
-  }
-
-  nav ul li {
-    display: inline;
-    
- }
-
-main ul{
-  position: center;
+nav ul li {
+  display:inline; 
 }
+
 
 footer {
-    text-align: center;
+  text-align: center;
+}
+
+
+#planner {
+width: 100%;
+}
+
+#planner td, #customers th {
+border: 1px solid #ddd;
+padding: 8px;
 }
 
 table {
-  background-color: darksalmon;
+background-color: darksalmon;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-container img {
+  width: 50%;
+}
+
+.treinreizen img {
+display: block;
+margin-left: 0em;
+margin-right: auto;
+border-radius: 50%;
+width: 50%;
+border: 5px solid #3d3c3c;
+transition: all 2s ease;
+}
+
+.treinreizen img:hover {
+  margin-left: 8em;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+.treinreizen {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.footer {
+  background-color: darksalmon;
+  padding: 10px;
+  text-align: center;
+}
