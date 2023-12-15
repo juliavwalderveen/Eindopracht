@@ -1,4 +1,6 @@
 body {  background-image:url("sunset\ florencec.jpeg");
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #f5f5f5;
   background-repeat: no-repeat;
   background-size:cover;
   position:relative;
@@ -53,6 +55,28 @@ nav ul li {
   display:inline; 
 }
 
+/*Zorgt dat alle h1's netjes inspringen*/
+h1 {
+  margin-left: 10px;
+}
+
+/*Zorgt dat alle p's netjes inspringen*/
+p {
+  margin-left: 10px;
+}
+
+.mainn p {
+  display: flex;
+  justify-content: center;
+}
+
+main li{
+  display: flex;
+  justify-content: center;
+  font-variant-caps: all-small-caps;
+  font-size: 2em;
+}
+
 /*footer*/
 .footer {
   text-align: center;
@@ -60,78 +84,74 @@ nav ul li {
   padding: 1px;
 }
 
-
+/*tabel over hele pagina*/
 #planner {
 width: 100%;
 }
 
+/*tabel, randjes tussen vakken*/
 #planner td, #customers th {
 border: 1px solid #ddd;
 padding: 8px;
 }
 
+/*tabel, achtergrond kleur*/
 table {
 background-color: darksalmon;
 }
 
+/*plaatjes innsbruck*/
 .flex-container {
   display: flex;
   justify-content: space-around;
 }
 
+/*plaatjes inssbruck*/
 .flex-container img {
-  width: 50%;
+  width: 20em;
 }
 
-.treinreizen img {
+/* treinreizen */
+.row img {
 display: block;
 margin-left: 0em;
 margin-right: auto;
 border-radius: 50%;
 width: 50%;
+padding: 5px;
 border: 5px solid #3d3c3c;
 transition: all 2s ease;
 }
 
-.treinreizen img:hover {
+.row img:hover {
   margin-left: 8em;
 }
 
-
-* {
-  box-sizing: border-box;
-}
-
-.row {
+.row{
   display: flex;
 }
 
-.treinreizen {
-  flex: 33.33%;
-  padding: 5px;
-}
 
+
+/* bestemmingen fotos */
 .photos {
   text-align: center;
-  margin: 20px;
-}
-
-.photos {
+  margin: 2em;
   display: flex;
   justify-content: space-around;
   
 }
 
 .photos img {
-  width: 200px;
+  width: 14em;
   height: auto;
-  margin: 10px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
+  margin: 1em;
+  border: 5px solid #ddd;
+  transition: transform 450ms ease;
 }
 
 .photos img:hover {
   transform: scale(1.1);
   border-color: #555;
 }
+
