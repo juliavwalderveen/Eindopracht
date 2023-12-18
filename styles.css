@@ -1,4 +1,4 @@
-body {  background-image:url("sunset\ florencec.jpeg");
+body {  background-image:url("sunset_florencec.jpeg");
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             background-color: #f5f5f5;
   background-repeat: no-repeat;
@@ -65,11 +65,13 @@ p {
   margin-left: 10px;
 }
 
+/* tekst op main page in midden */
 .mainn p {
   display: flex;
   justify-content: center;
 }
 
+/* bestemmingen lijstje in het midden&font */
 main li{
   display: flex;
   justify-content: center;
@@ -82,22 +84,19 @@ main li{
   text-align: center;
   background-color: darksalmon;
   padding: 1px;
+  margin-top: 30px;
 }
 
-/*tabel over hele pagina*/
+/*tabel over hele pagina en kleur*/
 #planner {
 width: 100%;
+background-color: darksalmon;
 }
 
 /*tabel, randjes tussen vakken*/
-#planner td, #customers th {
+#planner td {
 border: 1px solid #ddd;
 padding: 8px;
-}
-
-/*tabel, achtergrond kleur*/
-table {
-background-color: darksalmon;
 }
 
 /*plaatjes innsbruck*/
@@ -123,25 +122,23 @@ border: 5px solid #3d3c3c;
 transition: all 2s ease;
 }
 
+/* verplaatst de "raampjes"*/
 .row img:hover {
   margin-left: 8em;
 }
 
+/* zet de plaatjes naast elkaar */
 .row{
   display: flex;
 }
 
-
-
-/* bestemmingen fotos */
+/* bestemmingen fotos placement*/
 .photos {
   text-align: center;
-  margin: 2em;
-  display: flex;
-  justify-content: space-around;
-  
+  margin:3vh;
 }
 
+/* styling vd fotos */
 .photos img {
   width: 14em;
   height: auto;
